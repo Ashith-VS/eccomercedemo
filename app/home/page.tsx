@@ -3,7 +3,9 @@ import { Product } from '@/types/product'
 import React from 'react'
 
 async function getProducts() {
-    const res = await fetch('https://fakestoreapi.com/products')
+    const res = await fetch('https://fakestoreapi.com/products', {
+        cache: 'no-store' // For SSR (use 'force-cache' for SSG
+    })
     if (!res.ok) throw new Error('Failed to fetch products')
     return res.json()
 }
