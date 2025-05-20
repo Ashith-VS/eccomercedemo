@@ -18,3 +18,7 @@ A mini e-commerce product catalog built with Next.js.
 3. To run development:
    npm run dev
 
+   ## Deploy vercel
+   https://eccomercedemo-72tg-iecg3qwv2-ashith-vs-projects.vercel.app/
+
+
