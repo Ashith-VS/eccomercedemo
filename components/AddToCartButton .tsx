@@ -1,14 +1,15 @@
 "use client"
-import { useAppDispatch, useAppSelector } from '@/redux/hooks'
+import { useAppSelector } from '@/redux/hooks'
 import { addItemToCart, CartItem } from '@/redux/slice/cartSlice'
 import { RootState } from '@/redux/store'
 import { Product } from '@/types/product'
 import { ShoppingCartIcon } from '@heroicons/react/16/solid'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 
 const AddToCartButton = ({ product }: { product: Product }) => {
-  const dispatch = useAppDispatch()
+  const dispatch = useDispatch()
   const { cartItems } = useAppSelector((state: RootState) => state.cart)
 
   const cartItemExists = cartItems.find((item: CartItem) => item.id === product.id);

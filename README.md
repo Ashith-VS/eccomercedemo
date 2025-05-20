@@ -12,8 +12,9 @@ A mini e-commerce product catalog built with Next.js.
 ## Setup
 
 1. Clone the repository  :
-   git clone 
+   git clone https://github.com/Ashith-VS/eccomercedemo.git
 2. Install dependencies:
    npm install
 3. To run development:
    npm run dev
+

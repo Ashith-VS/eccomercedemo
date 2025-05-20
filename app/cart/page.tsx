@@ -21,14 +21,16 @@ const Cart = () => {
 
     if (cartItems.length === 0) {
         return (
-            <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-                <h1 className="text-2xl font-bold mb-4">Your cart is empty</h1>
-                <Link
-                    href="/"
-                    className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
-                >
-                    Continue Shopping
-                </Link>
+            <div className="h-screen flex items-center justify-center">
+                <div className="max-w-2xl mx-auto px-4 py-16 text-center">
+                    <h1 className="text-2xl font-bold mb-4">Your cart is empty</h1>
+                    <Link
+                        href="/"
+                        className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
+                    >
+                        Continue Shopping
+                    </Link>
+                </div>
             </div>
         )
     }
